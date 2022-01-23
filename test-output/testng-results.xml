@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9994" started-at="2022-01-22T16:18:37 AMT" finished-at="2022-01-22T16:18:47 AMT">
+  <suite name="Default suite" duration-ms="41525" started-at="2022-01-22T21:29:59 AMT" finished-at="2022-01-22T21:30:41 AMT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9994" started-at="2022-01-22T16:18:37 AMT" finished-at="2022-01-22T16:18:47 AMT">
+    <test name="Default test" duration-ms="41525" started-at="2022-01-22T21:29:59 AMT" finished-at="2022-01-22T21:30:41 AMT">
       <class name="testcases.Booking">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:testcases.Booking@149494d8]" name="createDriver" is-config="true" duration-ms="7581" started-at="2022-01-22T16:18:37 AMT" finished-at="2022-01-22T16:18:45 AMT">
+        <test-method status="PASS" signature="preSetup()[pri:0, instance:testcases.Booking@710726a3]" name="preSetup" is-config="true" duration-ms="13553" started-at="2022-01-22T21:29:59 AMT" finished-at="2022-01-22T21:30:13 AMT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="BookNewHatchBack()[pri:0, instance:testcases.Booking@149494d8]" name="BookNewHatchBack" duration-ms="2385" started-at="2022-01-22T16:18:45 AMT" finished-at="2022-01-22T16:18:47 AMT">
+        </test-method> <!-- preSetup -->
+        <test-method status="PASS" signature="BookNewHatchBack()[pri:0, instance:testcases.Booking@710726a3]" name="BookNewHatchBack" duration-ms="27809" started-at="2022-01-22T21:30:13 AMT" finished-at="2022-01-22T21:30:40 AMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookNewHatchBack -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.Booking@710726a3]" name="afterTest" is-config="true" duration-ms="131" started-at="2022-01-22T21:30:40 AMT" finished-at="2022-01-22T21:30:41 AMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- testcases.Booking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

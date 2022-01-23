@@ -10,7 +10,7 @@ public class ShadowElements {
 	
 	// This method just treat the Accept Cookies button that is inside single shadow
 		// DOM.
-		public static WebElement treatShadowElements(WebDriver driver, String script, String css1, String css2) throws InterruptedException {
+		public WebElement treatShadowElements(WebDriver driver, String script, String css1, String css2) throws InterruptedException {
 			Thread.sleep(1000);
 			WebElement shadowDomHostElement = driver.findElement(By.cssSelector(css1));
 			WebElement last = (WebElement) ((JavascriptExecutor) driver).executeScript(script,shadowDomHostElement);

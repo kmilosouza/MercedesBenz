@@ -12,7 +12,7 @@ public class Home {
 
 	private WebElement cookiesId;
 	private WebElement ourCarsId;
-	String commonArg = "return arguments[0].shadowRoot";
+
 	private String cssSelectorCookie1 = "cmm-cookie-banner[class='hydrated";
 	private String cssSelectorCookie2 = "div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)";
 	
@@ -24,10 +24,14 @@ public class Home {
 		this.driver = driver;
 	}
 	
-	public void acceptCookies(WebDriver driver) throws InterruptedException {
-		cookiesId = utils.ShadowElements.treatShadowElements(driver, commonArg, cssSelectorCookie1, cssSelectorCookie2);
+	public void acceptCookies(WebDriver driver, ShadowElements shadow, String commonArg) throws InterruptedException {
+		cookiesId = shadow.treatShadowElements(driver, commonArg, cssSelectorCookie1, cssSelectorCookie2);
 		cookiesId.click();
 	}
 	
+	public void clickOurCarsMenu(WebDriver driver, ShadowElements shadow, String commonArg) throws InterruptedException {
+		ourCarsId = shadow.treatShadowElements(driver, commonArg, cssSelectorOurCars1, cssSelectorOurCars2);
+		ourCarsId.click();
+	}
 
 }
