@@ -22,11 +22,7 @@ public class Booking {
 	private WebDriver driver;
 	private ShadowElements shadow;
 	public String commonArg = "return arguments[0].shadowRoot";
-	/*
-	 * This framework was tested in a Linux environment. In order to reproduce the
-	 * execution in your environment, make sure that the Chrome driver is set in the
-	 * location cited below.
-	 */
+	
 	
 	@BeforeTest
 	public void preSetup() {
